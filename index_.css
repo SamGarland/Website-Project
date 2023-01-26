@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.background_landing{
+    background-image: url("background.jpg");
+    min-height: 100vh;
+    min-width: 1024px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    border-bottom: 5px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+    .background_landing{
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+
+.wrapper_main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 10%;
+    margin-top: -100px;
+    font-size: 60px;
+    animation: effect 5s linear;
+}
+
+@keyframes effect {
+    0% {
+        color: white;
+    }
+    50% {
+        color: rgb(133, 16, 16);
+    }
+    100% {
+        color: white;
+    }
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+    grid-row: 4;
+    margin-top: 50%;
+    margin-right: 20%;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    justify-items: center;
+}
+
+li a {
+    padding: 10px;
+    line-height: 3;
+}
+
+li a:hover{
+    color: rgb(133, 16, 16);
+ }
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(133, 16, 16);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+ }
+
+hr {
+    border: 10px solid rgb(133, 16, 16);
+    margin: 0;
+}
+
+.wrapper_sub{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.sub_title{
+    position: relative;
+    align-content: center;
+    margin-left: 2em;
+    margin-top: 4em;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    text-underline-position: below;
+    padding: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+}
+
+.text_box_1{
+    position: relative;
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-right: 4em;
+}
+
+.text_box_2{
+    position: relative;
+    grid-column: 2/4;
+    grid-row: 3;
+    margin-right: 4em;
+}
+
+.text_box_3{
+    position: relative;
+    grid-column: 2/4;
+    grid-row: 4;
+    margin-right: 4em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.back_button{
+    margin-bottom: 40px;
+    grid-column: 4/4;
+    grid-row: 5;
+    margin-right: 49px;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 4px;
+    background-color: rgb(133, 16, 16);
+}
+
+.contact_background{
+    background-image: url("background.jpg");
+    min-height: 100vh;
+    min-width: 1024px;
+    width: 100%;
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+    .about_background{
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+
+.justify{
+    justify-content: space-evenly;
+}
+
+.justify_end{
+    justify-content: end;
+}
+
+.card_left{
+    position: relative;
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 0em;
+    margin-bottom: 100px;
+}
+
+.card_right{
+    position: relative;
+    grid-column: 3;
+    grid-row: 3;
+    margin-right: 0em;
+    margin-bottom: 100px;
+}
+
+.card_final{
+    position: relative;
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 0em;
+    margin-bottom: 50px;
+}
+
+img {
+    border-radius: 10px;
+    border: 3px solid  rgb(133, 16, 16);
+    
+}
+
+button {
+    background-color: rgb(133, 16, 16);
+    border-radius: 10px;
+    border: 3px solid black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    border: 5px solid  rgb(133, 16, 16);
+}
+
+.table_wrap{
+    grid-template-columns: auto 700px auto auto auto;
+}
